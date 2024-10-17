@@ -11,3 +11,10 @@ def pedir_celcius():
 def convertir_fahrenheit(celsius):
     fahrenheit = (9*5)*celsius+32
     return fahrenheit
+
+
+def main():
+
+    return 0
+if __name__ == "__main__":
+    main()
