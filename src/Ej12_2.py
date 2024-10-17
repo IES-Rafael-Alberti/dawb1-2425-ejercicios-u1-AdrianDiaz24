@@ -1,14 +1,14 @@
 
 def pedir_horas():
-    horas = input("Dime las horas trabajadas: ")
+    horas = float(input("Dime las horas trabajadas: "))
     return horas
 
 def pedir_precio():
-    precio =  input("Dime el precio por hora: ")
+    precio =  float(input("Dime el precio por hora: "))
     return precio
 
-def calcular_importe(horas, precio) -> str:
-    return horas*precio
+def calcular_importe(horas, precio):
+    return horas * precio
 
 def main():
     horas = pedir_horas()
