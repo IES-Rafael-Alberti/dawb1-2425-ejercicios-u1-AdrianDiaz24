@@ -14,7 +14,9 @@ def convertir_fahrenheit(celsius):
 
 
 def main():
-
+    celsius = pedir_celcius()
+    fahrenheit = convertir_fahrenheit(celsius)
+    print(celsius,"ºC son ", fahrenheit,"ºF")
     return 0
 if __name__ == "__main__":
     main()
