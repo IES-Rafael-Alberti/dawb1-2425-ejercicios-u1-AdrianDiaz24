@@ -1,0 +1,8 @@
+#Escribe un programa que le pida al usuario 
+# una temperatura en grados Celsius, 
+# la convierta a grados Fahrenheit e imprima 
+# por pantalla la temperatura convertida.
+
+def pedir_celcius():
+    celsius = float(input("Dame una temperatura en Celsius: "))
+    return celsius
