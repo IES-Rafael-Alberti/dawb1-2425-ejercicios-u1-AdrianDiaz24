@@ -6,3 +6,8 @@
 def pedir_celcius():
     celsius = float(input("Dame una temperatura en Celsius: "))
     return celsius
+
+
+def convertir_fahrenheit(celsius):
+    fahrenheit = (9*5)*celsius+32
+    return fahrenheit
