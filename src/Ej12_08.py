@@ -5,18 +5,21 @@ def pedir_num():
     return a
 
 
-def suma(a,b,c):
-    resultado = a+b+c
+def suma(a,resultado):
+    resultado = resultado+a
     return resultado
 
 
 def main():
+    resultado = suma(0,0)
     a = pedir_num()
-    b = pedir_num()
-    c = pedir_num()
-    resultado = suma(a,b,c)
+    resultado = suma(a,resultado)
+    a = pedir_num()
+    resultado = suma(a,resultado)
+    a = pedir_num()
+    resultado = suma(a, resultado)
 
-    print("La suma de ",a,", ",b,", ", c, " es ", resultado)
+    print("La suma de los numeros dados es ", resultado)
     return 0
 
 if __name__ == "__main__":
