@@ -4,13 +4,14 @@
 #suma =((n*(n+1))/2)
 
 def pedir_num():
-    num = float(input("Dame un numero: "))
+    num = float(input("Dame un numero entero: "))
     return num
 
 
 def comprobar_num(a):
+    a = round(a)
     while a <=  0:
-        print("**ERROR** Escribe un numero mayor que 0")
+        print("**ERROR** Escribe un numero mayor que 0, recuerda que lo numeros reales seran redondeados")
         a = pedir_num()
     else:
         return a
@@ -18,6 +19,7 @@ def comprobar_num(a):
 
 def dar_num(a):
     i = 0
+    print("Estos son todos los numeros entre 1 y ", a)
     while i < a:
         i = i+1
         print(i)
@@ -32,7 +34,7 @@ def sumar_primos():
 
 def main():
     a = pedir_num()
-    comprobar_num(a)
+    a = comprobar_num(a)
     dar_num(a)
 
     return 0
