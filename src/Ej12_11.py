@@ -26,9 +26,14 @@ def dar_num(a):
     return i
 
 
-def sumar_primos():
-
-    return 0
+def sumar_primos(a):
+    i = 0
+    while i < a:
+        i = i+1
+        for i
+        
+        return 0
+    return b
 
 
 
