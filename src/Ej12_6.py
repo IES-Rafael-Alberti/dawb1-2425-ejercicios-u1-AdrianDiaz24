@@ -17,7 +17,12 @@ def importe_sin_iva(importe_f, iva_p):
 
 
 def main():
-    
+    importe_f = importe_final()
+    iva_p = iva_pagado(importe_f)
+    importe_p = importe_sin_iva(importe_f, iva_p)
+
+    print("El IVA pagado es de ", iva_p,"€")
+    print("El importe sin IVA seria de ", importe_p,"€")
     return 0
 
 if __name__ == "__main__":
