@@ -16,7 +16,7 @@ def main():
     c = pedir_num()
     resultado = suma(a,b,c)
 
-    print("La suma de ",a,", ",", ", " es ", resultado)
+    print("La suma de ",a,", ",b,", ", c, " es ", resultado)
     return 0
 
 if __name__ == "__main__":
