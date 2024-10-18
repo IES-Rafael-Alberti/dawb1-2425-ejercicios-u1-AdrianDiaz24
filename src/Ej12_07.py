@@ -2,9 +2,7 @@
 
 def pedir_num():
     a = float(print("Dame un numero que sumar: "))
-    b = float(print("Dame otro numero que sumar: "))
-    c = float(print("Dame otro numero que sumar: "))
-    return a,b,c
+    return a
 
 
 def suma(a,b,c):
@@ -13,7 +11,10 @@ def suma(a,b,c):
 
 
 def main():
-    
+    a = pedir_num()
+    suma = sum(a)
+
+    print("La suma de ",a,", ",", ", " es ", suma)
     return 0
 
 if __name__ == "__main__":
