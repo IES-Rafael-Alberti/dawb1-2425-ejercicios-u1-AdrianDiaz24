@@ -9,3 +9,11 @@ def pedir_precio():
 def pedir_iva():
     iva = float(input("Dame el IVA a aplicar: "))
     return iva
+
+
+def main():
+
+    return 0
+
+if __name__ == "__main__":
+    main()
