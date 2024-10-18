@@ -8,6 +8,14 @@ def pedir_num():
     return num
 
 
+def comprobar_num(a):
+    while a <=  0:
+        print("**ERROR** Escribe un numero mayor que 0")
+        a = pedir_num()
+    else:
+        return a
+
+
 def dar_num(a):
     i = 0
     while i < a:
@@ -16,9 +24,15 @@ def dar_num(a):
     return i
 
 
+def sumar_primos():
+
+    return 0
+
+
 
 def main():
     a = pedir_num()
+    comprobar_num(a)
     dar_num(a)
 
     return 0
