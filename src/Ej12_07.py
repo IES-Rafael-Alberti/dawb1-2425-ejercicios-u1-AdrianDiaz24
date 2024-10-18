@@ -12,7 +12,9 @@ def suma(a,b,c):
 
 def main():
     a = pedir_num()
-    suma = sum(a)
+    b = pedir_num()
+    c = pedir_num()
+    suma = sum(a,b,c)
 
     print("La suma de ",a,", ",", ", " es ", suma)
     return 0
