@@ -4,3 +4,8 @@
 def pedir_precio():
     precio = float(input("Dame el precio sin IVA del producto: "))
     return precio
+
+
+def pedir_iva():
+    iva = float(input("Dame el IVA a aplicar: "))
+    return iva
