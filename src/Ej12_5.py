@@ -10,9 +10,17 @@ def pedir_iva():
     iva = float(input("Dame el IVA a aplicar: "))
     return iva
 
+def calcular_precio(a, b):
+    precio_final = a*(1+b/100)
+    return precio_final
+
 
 def main():
+    precio = pedir_precio()
+    iva = pedir_iva()
+    precio_final = calcular_precio(precio, iva)
 
+    print("El precio final del producto es ", precio_final)
     return 0
 
 if __name__ == "__main__":
