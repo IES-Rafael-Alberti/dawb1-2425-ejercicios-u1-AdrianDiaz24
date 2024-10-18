@@ -16,6 +16,8 @@ def pedir_divisor():
 
 def calcular_resultado(n,m):
     c = n/m
+    import math
+    c = math.trunc(c)
     return c
 
 
@@ -30,7 +32,7 @@ def main():
     c = calcular_resultado(n,m)
     r = calcular_resto(n,m)
 
-    print(f"la división de {n} entre {m} da un cociente {c} y un resto ´{r}")
+    print(f"la división de {n} entre {m} da un cociente {c} y un resto {r}")
     return 0
 
 if __name__ == "__main__":
