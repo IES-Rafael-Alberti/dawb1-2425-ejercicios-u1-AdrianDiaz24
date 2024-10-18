@@ -26,14 +26,10 @@ def dar_num(a):
     return i
 
 
-def sumar_primos(a):
-    i = 0
-    while i < a:
-        i = i+1
-        for i
-        
-        return 0
-    return b
+def sumar(a):
+    
+
+    
 
 
 
@@ -41,6 +37,8 @@ def main():
     a = pedir_num()
     a = comprobar_num(a)
     dar_num(a)
+    suma = sumar(a)
+    print("La suma de todos los numeros entre 1 y ", a, "es: ", suma)
 
     return 0
 
