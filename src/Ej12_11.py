@@ -27,11 +27,8 @@ def dar_num(a):
 
 
 def sumar(a):
-    
-
-    
-
-
+    suma = ((a*(a+1))/2)
+    return suma
 
 def main():
     a = pedir_num()
