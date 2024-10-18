@@ -13,3 +13,17 @@ def pedir_altura():
     return altura
 
 
+def calcular_imc(h,m):
+    imc = (m/(h**2))
+    return imc
+
+
+def main():
+    h = pedir_altura()
+    m = pedir_peso()
+    imc = calcular_imc(h, m)
+    print(f"Tu índice de masa corporal es {imc} donde {round(imc,2)} es el  índice de masa corporal redondeado a dos decimales.")
+    return 0
+
+if __name__ == "__main__":
+    main()
