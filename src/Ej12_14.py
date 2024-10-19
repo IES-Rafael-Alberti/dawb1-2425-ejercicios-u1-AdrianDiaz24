@@ -22,7 +22,7 @@ def calcular_peso(payasos,muñecas):
 
 def convertir_kg(peso_t):
     peso_t_kg = float(peso_t/1000)
-    peso_t_kg = round()
+    peso_t_kg = round(peso_t_kg,2)
     return peso_t_kg
 
 
