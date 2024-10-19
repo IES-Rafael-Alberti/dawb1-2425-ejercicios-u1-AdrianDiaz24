@@ -22,7 +22,7 @@ def calcular_beneficio(dinero):
         dinero_g = (beneficio-dinero)
         print(f"El importe total de su cuenta despues del {i}º año es de {round(beneficio, 2)}€, habiendo generado {round(dinero_g,2)}€")
         i = i+1
-    return print ("Recuerde que este benecio se vera alterado si retira o ingresa mas dinero.")
+    return print ("Recuerde que este beneficio se vera alterado si retira o ingresa mas dinero.")
 
 
 def main():
