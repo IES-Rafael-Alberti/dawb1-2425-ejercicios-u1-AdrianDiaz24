@@ -20,7 +20,7 @@ def calcular_resultado(n,m):
 
 
 def calcular_resto(n,m):
-    r = int(n%m)
+    r = n%m
     return r
 
 
