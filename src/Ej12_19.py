@@ -14,12 +14,14 @@ def nombre_mayus(nombre:str):
     return nombre_m
 
 
-def contar_letras(nombre:str) -> bool:
+def contar_letras(nombre: str) -> int:
     num_letras = 0
-    while nombre.isalpha():
-        num_letras = num_letras+1
-    else:
-        return num_letras
+
+    for caracter in nombre:
+        if caracter.isalpha():
+            num_letras = num_letras+1
+
+    return num_letras
 
 
 def main():
