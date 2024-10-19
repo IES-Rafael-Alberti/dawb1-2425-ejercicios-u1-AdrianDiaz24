@@ -18,3 +18,25 @@ def pedir_payaso():
 def calcular_peso(payasos,muñecas):
     peso_t = (payasos*112)+(muñecas*75)
     return peso_t
+
+
+def convertir_kg(peso_t):
+    peso_t_kg = float(peso_t/1000)
+    peso_t_kg = round()
+    return peso_t_kg
+
+
+def main():
+    payasos = pedir_payaso()
+    muñecas = pedir_muñecas()
+    peso_t = calcular_peso(payasos, muñecas)
+
+    if peso_t <= 1000:
+        print(f"El peso del envio de {muñecas} muñeca/s y {payasos} payaso/s es de {peso_t}g")
+        return 0
+    else:
+        peso_t_kg = convertir_kg(peso_t)
+        print(f"El peso del envio de {muñecas} muñeca/s y {payasos} payaso/s es de {peso_t_kg}Kg")
+
+if __name__ == "__main__":
+    main()
