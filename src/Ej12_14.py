@@ -6,12 +6,12 @@
 # último pedido y calcule el peso total del paquete que será enviado.
 
 def pedir_muñecas():
-    muñecas = int(print("Dime cuantas muñecas vas a enviar: "))
+    muñecas = int(input("Dime cuantas muñecas vas a enviar: "))
     return muñecas
 
 
 def pedir_payaso():
-    payasos = int(print("Dime cuantos payasos vas a enviar: "))
+    payasos = int(input("Dime cuantos payasos vas a enviar: "))
     return payasos
 
 
