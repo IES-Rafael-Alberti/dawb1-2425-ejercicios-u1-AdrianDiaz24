@@ -15,13 +15,14 @@ def pedir_dinero():
 
 def calcular_beneficio(dinero):
     i = 1
-    beneficio = (dinero*1.04)
+    beneficio = dinero
+    print(f"Has ingresado {round(dinero,2)}€")
     while i <= 3:
-        beneficio_a = (beneficio*i)
-        print(f"El dinero generado el {i}º año es de {round(beneficio_a, 2)}")
+        beneficio = (beneficio*1.04)
+        dinero_g = (beneficio-dinero)
+        print(f"El importe total de su cuenta despues del {i}º año es de {round(beneficio, 2)}€, habiendo generado {round(dinero_g,2)}€")
         i = i+1
-    rentabilidad = beneficio-dinero
-    return print (f"Siendo {round(rentabilidad,2)} € la rentabilidad anual.")
+    return print ("Recuerde que este benecio se vera alterado si retira o ingresa mas dinero.")
 
 
 def main():
