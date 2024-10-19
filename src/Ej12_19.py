@@ -4,7 +4,7 @@
 
 
 def pedir_nombre():
-    nombre = str(input("Dame tu nombre completo: "))
+    nombre = str(input("Dame tu nombre: "))
     return nombre
 
 
@@ -14,14 +14,22 @@ def nombre_mayus(nombre:str):
     return nombre_m
 
 
-def contar_letras(nombre:str):
-    num_letras = nombre.count()
-    return num_letras
+def contar_letras(nombre:str) -> bool:
+    num_letras = 0
+    while nombre.isalpha():
+        num_letras = num_letras+1
+    else:
+        return num_letras
 
 
 def main():
     nombre = pedir_nombre()
     nombre_m = nombre_mayus(nombre)
     a = contar_letras(nombre)
+
     print(f"{nombre_m} tiene {a} letras.")
+
     return 0
+
+if __name__ == "__main__":
+    main()
