@@ -37,6 +37,7 @@ def main():
     else:
         peso_t_kg = convertir_kg(peso_t)
         print(f"El peso del envio de {muñecas} muñeca/s y {payasos} payaso/s es de {peso_t_kg}Kg")
+        return 0
 
 if __name__ == "__main__":
     main()
