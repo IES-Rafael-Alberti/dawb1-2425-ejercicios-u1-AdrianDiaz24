@@ -12,10 +12,12 @@ def pedir_num():
     return num
 
 
-def comprobar_nombre(nombre):
-     while nombre <=0 or nombre > 0:
-          nombre = str(input("**ERROR** Esto no es un nombre, por favor introduzca uno valido: "))
-     return nombre
+def comprobar_nombre(nombre:str):
+     while nombre.isdigit():
+          nombre = input("**ERROR** Esto no es un nombre, por favor introduzca uno valido: ")
+     else:
+        nombre = nombre.replace("0","").replace("1","").replace("2","").replace("3","").replace("4","").replace("5","").replace("6","").replace("7","").replace("8","").replace("9","")
+        return nombre
 
 
 def mostrar_nombre(num, nombre):
@@ -27,8 +29,8 @@ def mostrar_nombre(num, nombre):
 
 def main():
     nombre = pedir_nombre()
+    nombre = comprobar_nombre(nombre)
     num = pedir_num()
-    comprobar_nombre(nombre)
     mostrar_nombre(num,nombre)
 
 if __name__ == "__main__":
