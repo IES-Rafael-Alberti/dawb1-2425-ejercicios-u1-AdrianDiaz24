@@ -15,14 +15,12 @@ def pedir_divisor():
 
 
 def calcular_resultado(n,m):
-    c = n/m
-    import math
-    c = math.trunc(c)
+    c = int(n/m)
     return c
 
 
 def calcular_resto(n,m):
-    r = n%m
+    r = int(n%m)
     return r
 
 
