@@ -15,7 +15,7 @@ def pedir_dinero():
 
 def calcular_beneficio(dinero):
     i = 1
-    for i in range(3):
+    while i <= 3:
         beneficio = (dinero*1.04)*i
         print(f"El dinero generado el {i}º año es de {round(beneficio, 2)}")
         i = i+1
