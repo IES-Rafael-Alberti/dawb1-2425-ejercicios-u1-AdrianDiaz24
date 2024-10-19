@@ -9,24 +9,27 @@ def pedir_nombre():
     return nombre
 
 
-def convertir_min():
-    minuscula = 
+def convertir_min(nombre:str):
+    minuscula = nombre.lower()
     return minuscula
 
 
-def convertir_mayus():
-    mayusculas = 
+def convertir_mayus(nombre:str):
+    mayusculas = nombre.upper()
     return mayusculas
 
 
-def convertir_iniciales():
-    iniciales = 
+def convertir_iniciales(nombre:str):
+    iniciales = nombre.title()
     return iniciales
 
 
 def main():
-    
-    return
+    nombre = pedir_nombre()
+    print(f"- {convertir_min(nombre)}")
+    print(f"- {convertir_mayus(nombre)}")
+    print(f"- {convertir_iniciales(nombre)}")
+    return 0
 
 if __name__ == "__main__":
     main()
