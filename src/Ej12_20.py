@@ -10,8 +10,12 @@ def pedir_tlf():
 
 def conseguir_tlf_s(tlf:str):
     x = tlf.index("-")+1
-    tlf = tlf[x]
-    tlf_s = tlf
+    i = 0
+    tlf_s = str()
+    while i < 9:
+        tlf_s = tlf_s + tlf[x]
+        x = x+1
+        i = i+1
     return tlf_s
 
 
