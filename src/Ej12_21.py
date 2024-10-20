@@ -6,8 +6,20 @@ def pedir_frase():
     return frase
 
 
-def main():
+def invertir_frase(frase:str):
+    x = len(frase)
+    y = -1
+    frase_i = ""
+    while y > -x:
+        frase_i = frase_i + frase[::y]
+        y = y-1
+        return frase_i
 
+
+def main():
+    frase = pedir_frase()
+    frase_i = invertir_frase(frase)
+    print(f"La frase invertida es: {frase_i}")
     return 0
 
 if __name__ == "__main__":
