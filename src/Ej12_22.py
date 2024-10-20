@@ -16,7 +16,6 @@ def convertir_frase(frase:str, vocal:str):
     x = len(frase)
     frase_c = str("")
     i = 0
-    b = 0
     while i < x:
         y = frase[i]
         if y == vocal:
@@ -25,7 +24,6 @@ def convertir_frase(frase:str, vocal:str):
         else:
             frase_c = str(frase_c + frase[i])
             i = i+1
-        b = b+1
     return frase_c
     
 
