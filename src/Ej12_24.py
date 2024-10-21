@@ -4,7 +4,9 @@
 
 
 def pedir_precio():
-    precio = str(input("Dame el percio de producto siguiendo el siguiente formato (x.xx): "))
+    precio = float(input("Dame el percio de producto siguiendo el siguiente formato (x.xx): "))
+    precio = round(precio,2)
+    precio=str(precio)
     return precio
 
 
@@ -20,15 +22,22 @@ def separar_precio_e(precio:str):
     return euros
 
 
-def separar_precio_c(precio):
-
-    return centimos
+def separar_precio_c(precio:str):
+    a = precio.find(".")+1
+    i = len(precio)
+    centimos = ""
+    while a <= i:
+        centimos = centimos+precio[a]
+        a = a+1
+        return centimos
 
 
 def main():
     precio = pedir_precio()
     euros = separar_precio_e(precio)
+    centimos = separar_precio_c(precio)
     print(euros)
+    print(centimos)
     return 0
 
 if __name__ == "__main__":
