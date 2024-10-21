@@ -5,6 +5,7 @@
 
 def pedir_compra():
     compra = str(input("Introduce los poductos de tu cesta de la compra, separa cada producto entre si por una coma: "))
+    compra = str(compra+",")
     return compra
 
 
@@ -21,10 +22,9 @@ def separar_productos(compra:str):
             i_2 = i_2+1
         print(f"- {producto}")
         c = len(compra)
-        i_3 = b
-        while i_3 < c:
-            compra_m = compra_m+compra[i_3]
-            i_3 = i_3+1
+        while b < c:
+            compra_m = str(compra_m+compra[b])
+            b = b+1
         compra  = compra_m        
     i = i+1
     return producto
