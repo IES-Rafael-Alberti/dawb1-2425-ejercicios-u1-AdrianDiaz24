@@ -9,10 +9,14 @@ def pedir_fecha():
     return fecha
 
 
-def conseguir_año(fecha:str):
-    año = 0
+def conseguir_año(fecha_sin_d:str):
+    a = fecha_sin_d.find("/")+1
+    b= len(fecha_sin_d)
+    año  = ""
+    while a < b:
+        año = año+fecha_sin_d[a]
+        a = a+1
     return año
-
 
 def quitar_dia(fecha:str):
     a = fecha.find("/")+1
@@ -47,9 +51,10 @@ def conseguir_dia(fecha:str):
 def main():
     fecha = pedir_fecha()
     dia = conseguir_dia(fecha)
-    mes = conseguir_mes(fecha_sin_d = quitar_dia(fecha))
-    print(dia)
-    print(mes)
+    fecha_sin_d = quitar_dia(fecha)
+    mes = conseguir_mes(fecha_sin_d)
+    año = conseguir_año (fecha_sin_d)
+    print(f"- Naciste el {dia} del {mes} de {año}")
     return 0
 
 if __name__ == "__main__":
