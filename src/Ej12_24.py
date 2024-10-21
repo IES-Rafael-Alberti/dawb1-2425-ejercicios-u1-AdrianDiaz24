@@ -23,21 +23,22 @@ def separar_precio_e(precio:str):
 
 
 def separar_precio_c(precio:str):
-    a = precio.find(".")+1
-    i = len(precio)
+    a =  precio.find(".")+1
+    b = len(precio)
+    i = 0
     centimos = ""
-    while a <= i:
-        centimos = centimos+precio[a]
+    while a < b:
+        centimos=centimos+precio[a]
         a = a+1
-        return centimos
+    return centimos
 
 
 def main():
     precio = pedir_precio()
     euros = separar_precio_e(precio)
     centimos = separar_precio_c(precio)
-    print(euros)
-    print(centimos)
+    print(f"- {euros}€")
+    print(f"- {centimos} Cents.")
     return 0
 
 if __name__ == "__main__":
