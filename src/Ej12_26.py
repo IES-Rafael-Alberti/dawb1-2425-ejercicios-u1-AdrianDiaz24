@@ -13,12 +13,19 @@ def separar_productos(compra:str):
     i =0
     i_2 = 0
     producto = ""
+    compra_m = ""
     while i < a:
         b = compra.find(",")
         while i_2 < b:
             producto = producto+compra[i_2]
-
-    print(f"- {producto}")
+            i_2 = i_2+1
+        print(f"- {producto}")
+        c = len(compra)
+        i_3 = b
+        while i_3 < c:
+            compra_m = compra_m+compra[i_3]
+            i_3 = i_3+1
+        compra  = compra_m        
     i = i+1
     return producto
 
