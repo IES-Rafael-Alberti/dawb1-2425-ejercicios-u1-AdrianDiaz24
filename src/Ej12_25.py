@@ -5,5 +5,52 @@
 
 
 def pedir_fecha():
-    año = str(input("Introducaz su fecha de nacimiento, (siguiento este formato: dd/mm/aaaa): "))
+    fecha = str(input("Introducaz su fecha de nacimiento, (siguiento este formato: dd/mm/aaaa): "))
+    return fecha
+
+
+def conseguir_año(fecha:str):
+    año = 0
     return año
+
+
+def quitar_dia(fecha:str):
+    a = fecha.find("/")+1
+    b = len(fecha)
+    fecha_sin_d = ""
+    while a < b:
+        fecha_sin_d = fecha_sin_d+fecha[a]
+        a = a+1 
+    return fecha_sin_d
+
+
+def conseguir_mes(fecha_sin_d:str):
+    a = fecha_sin_d.find("/")
+    i = 0
+    mes = ""
+    while i < a:
+        mes = mes+fecha_sin_d[i]
+        i = i+1
+    return mes
+
+
+def conseguir_dia(fecha:str):
+    a = fecha.find("/")
+    i = 0
+    dia = ""
+    while i < a:
+        dia = dia+fecha[i]
+        i = i+1
+    return dia
+
+
+def main():
+    fecha = pedir_fecha()
+    dia = conseguir_dia(fecha)
+    mes = conseguir_mes(fecha_sin_d = quitar_dia(fecha))
+    print(dia)
+    print(mes)
+    return 0
+
+if __name__ == "__main__":
+    main()
