@@ -5,29 +5,15 @@
 
 def pedir_compra():
     compra = str(input("Introduce los poductos de tu cesta de la compra, separa cada producto entre si por una coma: "))
-    compra = str(compra+",")
     return compra
 
 
 def separar_productos(compra:str):
-    a = compra.count(",")
-    i =0
-    i_2 = 0
-    producto = ""
-    compra_m = ""
-    while i < a:
-        b = compra.find(",")
-        while i_2 < b:
-            producto = producto+compra[i_2]
-            i_2 = i_2+1
-        print(f"- {producto}")
-        c = len(compra)
-        while b < c:
-            compra_m = str(compra_m+compra[b])
-            b = b+1
-        compra  = compra_m        
-    i = i+1
-    return producto
+    productos = compra.split(",")
+    for producto in productos:
+        producto = producto.strip()
+        print (f"- {producto}")
+    return 0
 
 
 def main():
