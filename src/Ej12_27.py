@@ -4,7 +4,7 @@
 # de unidades con tres dígitos y el coste total con 8 dígitos enteros y 2 decimales
 
 
-def precio_unitario(precio:str):
+def precio_unitario(precio:str) -> str:
     a = precio.find(".")
     centimos = ".00"
     precio_u = "000000.00"
@@ -17,12 +17,24 @@ def precio_unitario(precio:str):
     return precio_u
 
 
+def unidades_t(unidades:str):
+    unidades_r = unidades.rjust(3,"0")
+    return unidades_r
+
+
+def coste_t(precio:float, unidades:int):
+    coste_total = precio*unidades
+    return coste_total
+
+
 def main ():
-    nombre = str(input("Introduce el nombre del producto: "))
-    precio = str(input("Introduce el precio unitario: "))
-    unidades = str(input("Introduce el nº de unidades disponibles: "))
+    nombre = input("Introduce el nombre del producto: ")
+    precio = input("Introduce el precio unitario: ")
+    unidades = input("Introduce el nº de unidades disponibles: ")
     precio_u = precio_unitario(precio)
-    print(f"- {nombre} - {precio_u} - {unidades}")
+    unidades_r = unidades_t(unidades)
+    coste_total = coste_t(float(precio), int(unidades))
+    print(f"- {nombre} - {precio_u} - {unidades_r} - {coste_total:011.2f}")
     return 0
 
 if __name__ == "__main__":
