@@ -6,7 +6,7 @@ def comprobar_num(a, b):
     if a < b:
         return b
     elif a > b:
-        return a
+        return b
     elif a == b:
         return 0
 
