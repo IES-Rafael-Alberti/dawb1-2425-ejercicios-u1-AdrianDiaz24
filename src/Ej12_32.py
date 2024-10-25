@@ -3,15 +3,18 @@
 
 def sacar_serie(num):
     a = 1
-    b = 1
+    b = 0
+    c = 1
+    i = 0
     if num == 1:
         print(a)
-    elif num == 2: 
-        print(a)
-        print(b)
-    else
-        
-         
+    else:
+        while i < num:
+            print(c)
+            c = a+b
+            b = a
+            a = c
+            i = i+1
     return 0
 
 
