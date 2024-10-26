@@ -15,7 +15,8 @@ def pedir_altura():
 
 def calcular_imc(h,m):
     imc = (m/(h**2))
-    return round(imc,2)
+    imc = round(imc,2)
+    return imc
 
 
 def main():
